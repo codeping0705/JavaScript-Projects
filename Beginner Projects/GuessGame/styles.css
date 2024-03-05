@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kode Mono", monospace;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-shadow: 2px 2px 2px#111;
+}
+
+.main {
+    padding: 40px;
+    background-color: #333;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px #111, -6px -6px 10px #111;
+}
+
+.container {
+    background-color: #555;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 6px 6px 10px #111;
+}
+
+.container h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.container h1 span {
+    color: #111;
+}
+
+.icon {
+    font-size: 40px;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.game {
+    padding: 30px;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #111;
+    border-radius: 5px;
+}
+
+.game button {
+    padding: 5px 8px;
+    margin-left: 30px;
+    background-color: #333;
+    color: #F0F0F0;
+    box-shadow: 2px 2px 4px #111 , -2px -2px 4px #111;
+    transition: 0.3s ease;
+
+}
+.btn{
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 7px 11px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: #F0F0F0;
+    transition: 0.3s ease;
+    border: 1px solid #F0F0F0;
+
+}
+.btn:hover{
+background-color: #F0F0F0;
+color: #111;
+font-weight: bold;
+font-size: 15px;
+}
+
+.game #input {
+    padding: 5px 8px;
+    border: 2px solid black;
+    background-color: #333;
+    color: #F0F0F0;
+    box-shadow: 2px 2px 4px #111;
+}
+
+.container p {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+}
+
+.game button:hover {
+    background-color: #666;
+}
+.sw{
+    font-family: "Protest Revolution", sans-serif;
+    color: #eb4d4d;
+    font-size: 25px;
+    transition: 1s ease;
+}
+.s{
+    font-family: "Protest Revolution", sans-serif;
+    color: #b2dd4c;
+    font-size: 25px;
+    transition: 1s ease;
+}
+.w{
+    font-family: "Protest Revolution", sans-serif;
+    color: #2467e4;
+    font-size: 25px;
+    transition: 1s ease;
+}
+
+/* Add styling for the previous number display */
+.game p {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #111;
+}

@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222222; /* Dark gray */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #444444; /* Gray */
+    background-color: #333333; /* Dark gray */
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: #444444; /* Gray */
+    border-radius: 20px;
+    border: 2px solid #666666; /* Light gray */
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #ffffff; /* White */
+}
+
+.box {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333; /* Dark gray */
+    border-radius: 10px;
+    border: 2px solid #444444; /* Gray */
+}
+
+.input {
+    padding: 5px 8px;
+    border: 2px solid #444444; /* Gray */
+    border-radius: 5px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: #080808; /* White */
+}
+
+button {
+    background-color: #206444; /* Orange */
+    padding: 4px 8px;
+    border: 2px solid #206444; /* Orange */
+    border-radius: 5px;
+    color: #ffffff; /* White */
+    cursor: pointer;
+}
+
+.weather-box {
+    background-color: #444444; /* Gray */
+    margin-top: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #666666; /* Light gray */
+    border-radius: 5px;
+}
+
+.icon {
+    background-color: #ffffff; /* Orange */
+    color: #ffffff; /* White */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+    margin-left: 135px;
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+}
+
+.weather,
+.temperature,
+.description {
+    font-weight: bolder;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #030303; /* White */
+    font-size: 35px;
+}
+
+.description {
+    font-style: italic;
+}

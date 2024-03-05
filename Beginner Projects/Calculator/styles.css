@@ -1,0 +1,89 @@
+
+body{
+    background-color: #F0F0F0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    border-radius: 10px;
+    background-color: #444;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.cal{
+    background-color: #333;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: large;
+    background-color: #555;
+    color: azure;
+    border: black;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 10px rgb(26, 25, 25);
+}
+
+button:hover{
+    color: black;
+    font-weight:bold;
+    background-color:#777 ;
+    transition: 0.1ms;
+}
+button:active {
+    transition: 0.2ms;
+    transform: translateY(3px);
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+h1 {
+    font-size: xx-large;
+    background-color: #555;
+    color: azure;
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    box-shadow: 6px 6px 10px rgb(27, 27, 27);
+    border-radius: 8px;
+    margin: 5px;
+    overflow: hidden;
+    max-width: 235px;
+}
+
+
+.des2{
+    background-color: rgb(233, 173, 10);
+    color: black;
+    font-size: bolder;
+}
+
+.des1{
+    background-color: black;
+    box-shadow: 6px 6px 10px rgb(43, 41, 41);
+}
+.des3{
+    background-color: #333;
+    box-shadow: 6px 6px 10px rgb(27, 27, 27);
+}
+
+.des2:hover{
+    background-color: rgba(131, 101, 3, 0.671);
+    font-weight: bolder;
+}

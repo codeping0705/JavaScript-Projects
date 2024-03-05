@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: white;
+    transition: 0.5s;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #444;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+header .logo:hover {
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+header .logo span {
+    color: rgb(34, 123, 240);
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #444;
+    transition: 0.5s;
+}
+
+.content {
+    position: relative;
+    max-width: 700px;
+
+}
+
+.content h2 {
+    font-size: 5.5em;
+    color: #444;
+}
+
+.content p {
+    font-size: 1.5em;
+    color: #444;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.content h2 span {
+    color: rgb(34, 123, 240);
+}
+
+.content button {
+    position: relative;
+    color: white;
+    background-color: rgb(34, 123, 240);
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 300;
+
+}
+
+.content button.chat {
+    background: transparent;
+    background-color: #444;
+    color: white;
+}
+
+.content button.chat:hover {
+    background: transparent;
+    color: #444;
+}
+
+.dayNight {
+    position: relative;
+    font-size: 1.8em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    color:  rgb(24, 44, 44);
+
+}
+
+/* Light-Dark Mode  */
+.dayNight ion-icon:nth-child(2),
+.banner.night .dayNight ion-icon:nth-child(1) {
+    display: none;
+}
+
+.banner.night .dayNight ion-icon:nth-child(2) {
+    display: block;
+}
+
+.banner.night {
+    background: black
+}
+
+.banner.night .content h2 {
+    color: white;
+}
+
+.banner.night .content p {
+    color: white;
+    transition: 0.5s;
+}
+
+.banner.night header a {
+    color: white;
+    transition: 0.5s;
+}
+
+.banner.night .content .chat:hover {
+    background-color: white;
+    color: black;
+}
+
+.content #code {
+    font-weight: 700;
+    color: rgb(24, 44, 44);
+}
